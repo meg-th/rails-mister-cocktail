@@ -1,0 +1,15 @@
+<div class="container">
+  <div class= "cocktails_list">
+  	<h1>Mister Cocktail's Tasty Cocktails</h1>
+  	<ul>
+  	  
+      <% @cocktails.each do |cocktail|%>
+        <li> 
+  	      <h3><%=link_to cocktail.name, cocktail_path(cocktail.id)%></h3>
+  	    </li>
+      <%end%>
+  	
+    </ul>
+    <%= link_to "Create your own cocktail!", new_cocktail_path  %>
+  </div>
+</div>
