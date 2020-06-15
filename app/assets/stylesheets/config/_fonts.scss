@@ -1,18 +1,12 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto&display=swap');
+
 
 // Define fonts for body and headers
 
-h1, h2 {
-	font-family: "Playfair";
-}
- 
-h3, p {
-	font-family: "Roboto";
-	font-weight: 300; 
-}
+$body-font: 'Roboto', sans-serif ;
+$headers-font: 'Playfair Display', serif ;
 
-// $headers-font:"Playfair", "Roboto";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

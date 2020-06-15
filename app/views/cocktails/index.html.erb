@@ -1,17 +1,27 @@
-<div class="container">
-  <div class = "static-nav">
-    <h1>Mister Cocktail</h1>
-    <h2>Browse our Cocktail Menu</h2>
+<body data-spy="scroll" data-offset="0" data-target="#myScrollspy">
+  <div class="container mx-1 m-5">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="affixed-info home-menu sticky-top">
+          <h1 class="mt-5">Mister Cocktail</h1>
+          <h2>The Open Cocktail Library</h2>
+      
+          <h2><%= link_to "Add Your Favourite Recipe", new_cocktail_path %></h2>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 packet-container" id="myScrollspy">
+        <div class=" d-flex align-items-center">
+          <div class = "cocktails-list">
+           <ul>
+               <%@cocktails.each do |cocktail|%>
+                 <li> 
+                   <h3><%=link_to cocktail.name, cocktail_path(cocktail.id)%></h3>
+                 </li>
+               <%end%>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
- 
-  <div class= "cocktails_list">
-  	<ul>
-      <% @cocktails.each do |cocktail|%>
-        <li> 
-  	      <h3><%=link_to cocktail.name, cocktail_path(cocktail.id)%></h3>
-  	    </li>
-      <%end%>
-    </ul>
-    <%= link_to "Create your own cocktail!", new_cocktail_path  %>
-  </div>
-</div>
+</body>
