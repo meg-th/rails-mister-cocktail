@@ -1,8 +1,10 @@
 <div class="container">
-  <h1><%= @cocktail.name %> Recipe</h1>
-  <div><%= link_to "Add A Dose", new_cocktail_dose_path(@cocktail)%></div>
-  <br>
-  <%= link_to "Return to homepage", cocktails_path %>
+  <div class = "static-nav" id = "show">
+    <h1><%= @cocktail.name %> Recipe</h1>
+    <div><%= link_to "Add A Dose", new_cocktail_dose_path(@cocktail)%></div>
+    <br>
+    <%= link_to "Return to homepage", cocktails_path %>
+  </div>
   <div class= "ingredients">
     <% @cocktail.doses.each do |dose| %> 
       <ul>
