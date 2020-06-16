@@ -14,5 +14,5 @@ file = JSON.parse(url.read)
 source = file["drinks"]
 
 source.each do |item|
-	Ingredient.create(name: item["strIngredient1"])
-end 
+  Ingredient.create(name: item["strIngredient1"])
+end

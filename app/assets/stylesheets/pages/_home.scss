@@ -1,7 +1,14 @@
 // Specific CSS for your home-page
-.home-menu {
+.menu {
 	width: 50%; 
 	height: 900px; 
 	background-color: #464f3c;
 	color: #f7f7e6 ;
+	display: flex; 
+	align-items: center;
+    .menu-text {
+    	display:flex;
+    	flex-direction: column;
+    	padding-left:20px;
+    }
 }
