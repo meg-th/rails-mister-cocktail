@@ -54,6 +54,8 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 
-# Cloudinary 
+# host images
 gem 'cloudinary', '~> 1.12.0'
 
+# mask api keys
+gem 'dotenv-rails', groups: [:development, :test]
